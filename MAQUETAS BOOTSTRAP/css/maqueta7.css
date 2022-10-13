@@ -2,52 +2,51 @@ body{
     max-width: 100%;
     background-color: rgb(0, 101, 126);
 }
-.page-content{
+.container{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly;
+    justify-content: space-between;
     max-width: 100%;
-    padding: 10px;
-
-}
-.page-content2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-
-}
-.product-container2{
-    padding: 5px;
-    max-width: 100%;
-}
-.product-container3{
     margin: auto;
-    padding: 2px;
-    max-width: 100%;
+    align-items: center;
 }
-#s{
-    width: 500px;
-    height: 700px;
+.imagenes-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
 }
-#e{
-    width: 400px;
-    height: 700px;
+.imagenes-2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
 }
-#b{
-    width: 300px;
-    height: 260px;
+#img-1{
+    height: 500px;
+    padding-top: 10px;
 }
-#a{
-    width: 350px;
+#img-2{
+    height: 500px;
+    padding-top: 10px;
 }
-#st{
-    width: 300px;
-    height: 260px;
+#img-3{
+    height: 300px;
+    padding: 5px;
+}
+#img-4{
+    height: 300px;
+    padding: 5px;
+}
+#img-5{
+    height: 300px;
+    padding: 5px;
 }
 .subtitulo{
     text-align: center;
     background-color: black;
     color: white;
+    max-width: 100%;
 }
 .subtitulo:hover{
     color: rgb(87, 255, 199);
@@ -126,4 +125,733 @@ body{
 }
 .card-title{
     text-align: center;
+}
+/*Ventana modal 1*/
+.boton-modal{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal{
+    display: none;
+}
+.container-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal:checked ~ .container-modal{
+    display: flex;
+}
+.content-modal{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal img{
+    display: block;
+    margin: auto;
+}
+.content-modal h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal .btn-cerrar{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal .btn-cerrar label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal .btn-cerrar label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Ventana modal 2*/
+.boton-modal2{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal2 label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal2:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal2{
+    display: none;
+}
+.container-modal2{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal2:checked ~ .container-modal2{
+    display: flex;
+}
+.content-modal2{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal2 img{
+    display: block;
+    margin: auto;
+}
+.content-modal2 h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal2 p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal2 .btn-cerrar2{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal2 .btn-cerrar2 label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal2 .btn-cerrar2 label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal2{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Ventana modal 3*/
+.boton-modal3{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal3 label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal3:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal3{
+    display: none;
+}
+.container-modal3{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal3:checked ~ .container-modal3{
+    display: flex;
+}
+.content-modal3{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal3 img{
+    display: block;
+    margin: auto;
+}
+.content-modal3 h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal3 p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal3 .btn-cerrar3{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal3 .btn-cerrar3 label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal3 .btn-cerrar3 label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal3{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Ventana modal 4*/
+.boton-modal4{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal4 label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal4:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal4{
+    display: none;
+}
+.container-modal4{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal4:checked ~ .container-modal4{
+    display: flex;
+}
+.content-modal4{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal4 img{
+    display: block;
+    margin: auto;
+}
+.content-modal4 h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal4 p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal4 .btn-cerrar4{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal4 .btn-cerrar4 label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal4 .btn-cerrar4 label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal4{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Ventana modal 5*/
+.boton-modal5{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal5 label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal5:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal5{
+    display: none;
+}
+.container-modal5{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal5:checked ~ .container-modal5{
+    display: flex;
+}
+.content-modal5{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal5 img{
+    display: block;
+    margin: auto;
+}
+.content-modal5 h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal5 p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal5 .btn-cerrar5{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal5 .btn-cerrar5 label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal5 .btn-cerrar5 label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal5{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Ventana modal 7*/
+.boton-modal7{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal7 label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal7:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal7{
+    display: none;
+}
+.container-modal7{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal7:checked ~ .container-modal7{
+    display: flex;
+}
+.content-modal7{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal7 img{
+    display: block;
+    margin: auto;
+}
+.content-modal7 h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal7 p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal7 .btn-cerrar7{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal7 .btn-cerrar7 label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal7 .btn-cerrar7 label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal7{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Ventana modal 8*/
+.boton-modal8{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal8 label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal8:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal8{
+    display: none;
+}
+.container-modal8{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal8:checked ~ .container-modal8{
+    display: flex;
+}
+.content-modal8{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal8 img{
+    display: block;
+    margin: auto;
+}
+.content-modal8 h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal8 p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal8 .btn-cerrar8{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal8 .btn-cerrar8 label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal8 .btn-cerrar8 label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal8{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Ventana modal 2*/
+.boton-modal9{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal9 label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal9:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal9{
+    display: none;
+}
+.container-modal9{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal9:checked ~ .container-modal9{
+    display: flex;
+}
+.content-modal9{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal9 img{
+    display: block;
+    margin: auto;
+}
+.content-modal9 h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal9 p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal9 .btn-cerrar9{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal9 .btn-cerrar9 label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal9 .btn-cerrar9 label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal9{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+/*Ventana modal 11*/
+.boton-modal11{
+    padding: 10px;
+    background-color: rgb(116, 116, 238);
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+}
+.boton-modal11 label{
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal11:hover{
+    background-color: rgb(0, 0, 223);
+}
+#btn-modal11{
+    display: none;
+}
+.container-modal11{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(144, 148, 150, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal11:checked ~ .container-modal11{
+    display: flex;
+}
+.content-modal11{
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 2rem; 
+}
+.content-modal11 img{
+    display: block;
+    margin: auto;
+}
+.content-modal11 h2{
+    margin-bottom: 15px;
+    text-align: center;
+}
+.content-modal11 p{
+    padding: 15px 0px;
+    border-top: 1px solid rgb(247, 247, 247);
+    border-bottom: 1px solid rgb(247, 247, 247);    
+}
+.content-modal11 .btn-cerrar2{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal11 .btn-cerrar11 label{
+    padding: 7px 10px;
+    background-color:  rgb(0, 0, 223);;
+    text-align: center;
+    border-radius: 2rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.content-modal11 .btn-cerrar11 label:hover{
+    background-color: rgb(73, 73, 236);
+}
+.cerrar-modal11{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
